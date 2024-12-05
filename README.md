@@ -18,7 +18,11 @@ Run mapping.py to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape 
 
 _2. AV-DPM_
 
+We have made the complete training and sampling process of AV-DPM public. The relevant settings can be adjusted according to your needs in main.py and OCED.yml file.
+
 _3. STI-Net_
+
+Sorry, the complete version will be released before Dec. 7th.
 
 _4. Acknowledgements_
 
