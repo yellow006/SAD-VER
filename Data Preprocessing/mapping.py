@@ -9,7 +9,7 @@ from tqdm import tqdm
 from scipy import signal
 
 def get_eeg_data_unpreprocessed(o_path, file_idx):
-    eeg_data_raw = scipy.io.loadmat('o_path' + '/S%d.mat'%(file_idx))['X_3D']
+    eeg_data_raw = scipy.io.loadmat(o_path + '/S%d.mat'%(file_idx))['X_3D']
     eeg_data_raw = rearrange(eeg_data_raw, 'b t s -> s t b')
     print('\toriginal data shape after rearrange:  ', eeg_data_raw.shape)
     return eeg_data_raw
@@ -49,10 +49,10 @@ def mapping_unpreprocessed(data):
     return mapping_matrix_all_samples
 
 def get_labels(o_path, file_idx):
-    label_6_category = scipy.io.loadmat('o_ptah' + '/S%d.mat'%(file_idx))['categoryLabels']
+    label_6_category = scipy.io.loadmat(o_path + '/S%d.mat'%(file_idx))['categoryLabels']
     assert (np.max(label_6_category) == 6 and np.min(label_6_category) == 1)
 
-    label_72_category = scipy.io.loadmat('o_path' + '/S%d.mat'%(file_idx))['exemplarLabels']
+    label_72_category = scipy.io.loadmat(o_path + '/S%d.mat'%(file_idx))['exemplarLabels']
     assert (np.max(label_72_category) == 72 and np.min(label_72_category) == 1)
 
     return label_6_category, label_72_category
