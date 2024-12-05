@@ -1,0 +1,55 @@
+data:
+    dataset: "OCED"
+    data_path: 'Paste your data path here. It only supports the format (samp_nums, 32, 13, 13).'
+    image_size: 13
+    channels: 32
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 0
+
+model:
+    type: "simple"
+    attn_type:
+    in_channels: 32
+    out_ch: 32
+    ch: 256
+    ch_mult: [1, 2, 2, 2]
+    num_res_blocks: 2
+    attn_resolutions: [6, 7]
+    dropout: 0.1
+    var_type: fixedlarge
+    ema_rate: 0.9999
+    ema: True
+    resamp_with_conv: True
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+
+training:
+    batch_size: 64
+    n_epochs: 12000       # Maximun training epochs.
+    n_iters: 300000
+    snapshot_freq: 50000  # Save model every "snapshot_freq" training steps.
+    drop_last: True
+
+sampling:
+    batch_size: 64
+    last_only: True
+    ckpt_id: 300000       # Sample from the model file with a specified number of training iterations.
+    ds: 0
+    dr: 1
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.00004
+    beta1: 0.9
+    amsgrad: false
+    eps: 0.00000001
+    grad_clip: 1.0
