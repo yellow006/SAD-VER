@@ -14,7 +14,7 @@ _1. Data Preprocessing_
 
 Dataset (Public EEG dataset from Stanford Digital Repository, OCED) utilizd in this research is avaliable at: https://purl.stanford.edu/bq914sc3730
 
-Run mapping.py to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape should be transformed from (samp_num, 124, 32) to (samp_num, 13, 13, 32).
+Run mapping.py to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape should be transformed from (124, 32, samp_num) to (samp_num, 13, 13, 32).
 
 _2. AV-DPM_
 
