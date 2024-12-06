@@ -19,18 +19,14 @@ class PatchEmbedding(nn.Module):
         # self.patch_size = patch_size
         super().__init__()
 
-        # shallownet（浅层神经网络）。本模型用了一个结构较为简单的卷积神shallownet替代Transformer中的位置嵌入。
+        # shallownet
         self.shallownet = nn.Sequential(
-            # Conv2d(1=输入特征矩阵深度，40=卷积核个数，(1,25)=卷积核尺寸，(1,1)=卷积核横纵向移动步长，不指定padding=不进行填充)
-            # 这里将全部的40通道改为50通道，以期望增强观测的结果。
             nn.Conv2d(1, 8, kernel_size=(2, 2), stride=(2, 1), padding=(0, 1)),
 
-            # 注释以下代码并且拆分Conv与AvgPool，观察各个输出的尺寸。
             nn.Conv2d(8, 64, kernel_size=(62, 2), stride=(1, 1), padding=(0, 1)),
-            nn.BatchNorm2d(64),   # 批量归一化的输入通道数为40，对应上面Conv2d的40个输出通道。
+            nn.BatchNorm2d(64), 
             nn.ELU(),
             nn.AvgPool2d((1, 8), (1, 4)),  # pooling acts as slicing to obtain 'patch' along the time dimension as in ViT
-                                             # 池化核大小为(1,75)，移动步长为(1,15)
             nn.Dropout(0.5),
         )
 
@@ -159,7 +155,7 @@ class ClassificationHead(nn.Sequential):
             nn.Linear(emb_size, n_classes)
         )
         self.fc = nn.Sequential(
-            nn.Linear(448, 256),    # 原始是2440。这里进行改动，换成了forward中x的尺寸(72,1760)
+            nn.Linear(448, 256),
             nn.ELU(),
             nn.Dropout(0.5),
             nn.Linear(256, 64),
