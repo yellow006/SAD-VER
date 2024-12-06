@@ -22,7 +22,10 @@ We have made the complete training and sampling process of AV-DPM public. The re
 
 _3. STI-Net_
 
-Sorry, the complete version will be released before Dec. 7th.
+STI-Net folder contains all the decoding networks utilized in our research (STI-Net, EEGNet, EEGConformer, etc.). The complete training & validating pipeline is included.
+
+Note that before using these networks, you should specify the location where the dataset is stored by yourself, 
+and organize it according to whether it is for generating EEG, or whether it uses 124 channels or 13x13 mapping. The default storage location for the dataset is ./EEG_data.
 
 _4. Acknowledgements_
 
