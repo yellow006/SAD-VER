@@ -32,7 +32,11 @@ We have provided a preprocessed dataset via Baidu Netdisk. It can be easily acce
 You can access them on https://pan.baidu.com/s/1u1JRxspI6VCk9Q-788LfAA , password: oril . 
 Just place it under the STI-Net folder and it should work well.
 
-_4. Acknowledgements_
+_4. Validation on Other Datasets_
+
+We also validate SAD-VER's performance on SEED & SEED-IV dataset. Codes will be released before Dec. 10th.
+
+_5. Acknowledgements_
 
 Produced by Laboratory of Brain-Inspired Intelligence & Human-Computer Interaction, Jilin University, China.
 
