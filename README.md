@@ -27,7 +27,10 @@ STI-Net folder contains all the decoding networks utilized in our research (STI-
 Note that before using these networks, you should specify the location where the dataset is stored by yourself, 
 and organize it according to whether it is for generating EEG, or whether it uses 124 channels or 13x13 mapping. The default storage location for the dataset is ./EEG_data.
 
-For CN researchers, we have provided a preprocessed dataset via Baidu Netdisk. You can access them in https://pan.baidu.com/s/1u1JRxspI6VCk9Q-788LfAA , password: oril .
+We have provided a preprocessed dataset via Baidu Netdisk. It can be easily accessed in mainland China, but this cannot be guaranteed in other regions. 
+
+You can access them on https://pan.baidu.com/s/1u1JRxspI6VCk9Q-788LfAA , password: oril . 
+Just place it under the STI-Net folder and it should work well.
 
 _4. Acknowledgements_
 
