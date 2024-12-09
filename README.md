@@ -2,7 +2,7 @@
 
 Code for research paper:
 
-SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentation framework for Visual-stimulus EEG Recognition (Submitted to Advanced Engineering Informatics, in revision).
+SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentation framework for Visual-stimulus EEG Recognition (Submitted to _Advanced Engineering Informatics_, in revision).
 
 <img width="2864" alt="fig1_overall_framework" src="https://github.com/user-attachments/assets/b1eb458b-766f-4902-8135-e79730969a49">
 
