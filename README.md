@@ -10,6 +10,12 @@ SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentatio
 
 __Detailed Introduction:__
 
+_0. Requirements_
+
+Environments: Python >= 3.7 / PyTorch >= 1.10 / CUDA >= 11.3 / Ubuntu 20.04 or Windows 11 23H2.
+
+The number of trainable parameters in the U-Net used by AV-DPM is approximately 146.21M, with a GPU memory usage of about 6GB. To deploy SAD-VER, a NVIDIA GPU with VRAM >= 8GB is recommended.
+
 _1. Data Preprocessing_
 
 Dataset (Public EEG dataset from Stanford Digital Repository, OCED) utilizd in this research is avaliable at: https://purl.stanford.edu/bq914sc3730
