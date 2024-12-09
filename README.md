@@ -38,6 +38,8 @@ We also validate SAD-VER's performance on SEED & SEED-IV dataset. Codes avaliabl
 
 SEED and SEED-IV datasets are avaliable at: https://bcmi.sjtu.edu.cn/home/seed/
 
+Our experimental results in SEED & SEED-IV dataset are included in our revision to reviewers. They will be public released soon.
+
 _5. Acknowledgements_
 
 This project is deeply inspired by @ermongroup https://github.com/ermongroup/ddim . Salute to all open-source researchers!
