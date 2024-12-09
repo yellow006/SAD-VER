@@ -34,7 +34,7 @@ Just place it under the STI-Net folder and it should work well.
 
 _4. Validation on Other Datasets_
 
-We also validate SAD-VER's performance on SEED & SEED-IV dataset. Codes avaliable at _SADVER_Series_E_ (E stands for Emotional EEG). To use the SEED and SEED-IV datasets, you first need to download the SEED and SEED-IV datasets and run the mapping.py file in the Data Preprocessing folder. Then, replace the corresponding files in AV-DPM and STI-Net with the files from _SADVER_Series_E_.
+We also validate SAD-VER's performance on SEED & SEED-IV dataset. Codes avaliable at _SADVER_Series_E_ (E stands for Emotional EEG). To use the SEED and SEED-IV datasets, you first need to download the SEED and SEED-IV datasets and run the mapping.py file in the _Data Preprocessing_ folder. Then, replace the corresponding files in AV-DPM and STI-Net with the files from _SADVER_Series_E_.
 
 SEED and SEED-IV datasets are avaliable at: https://bcmi.sjtu.edu.cn/home/seed/
 
