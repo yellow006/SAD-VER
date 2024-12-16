@@ -20,11 +20,11 @@ The number of trainable parameters in the U-Net used by AV-DPM is approximately 
 
 Dataset (Public EEG dataset from Stanford Digital Repository, OCED) utilizd in this research is avaliable at: https://purl.stanford.edu/bq914sc3730
 
-Run mapping.py to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape should be transformed from (124, 32, samp_num) to (samp_num, 32, 13, 13).
+Run _mapping.py_ to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape should be transformed from (124, 32, samp_num) to (samp_num, 32, 13, 13).
 
 **2. AV-DPM**
 
-We have made the complete training and sampling process of AV-DPM public. The relevant settings can be adjusted according to your needs in main.py and OCED.yml file.
+We have made the complete training and sampling process of AV-DPM public. The relevant settings can be adjusted according to your needs in _main.py_ and _OCED.yml_ file.
 
 **3. STI-Net**
 
