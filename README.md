@@ -10,23 +10,23 @@ SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentatio
 
 __Detailed Introduction:__
 
-_0. Requirements_
+**0. Requirements**
 
 Environments: Python >= 3.7 / PyTorch >= 1.10 / CUDA >= 11.3 / Ubuntu 20.04 or Windows 11 23H2.
 
 The number of trainable parameters in the U-Net used by AV-DPM is approximately 146.21M, with a GPU memory usage of about 6GB. To deploy SAD-VER, a NVIDIA GPU with VRAM >= 8GB is recommended.
 
-_1. Data Preprocessing_
+**1. Data Preprocessing**
 
 Dataset (Public EEG dataset from Stanford Digital Repository, OCED) utilizd in this research is avaliable at: https://purl.stanford.edu/bq914sc3730
 
 Run mapping.py to obtain EEG data mapped in a 13x13 2D grid. The EEG data shape should be transformed from (124, 32, samp_num) to (samp_num, 32, 13, 13).
 
-_2. AV-DPM_
+**2. AV-DPM**
 
 We have made the complete training and sampling process of AV-DPM public. The relevant settings can be adjusted according to your needs in main.py and OCED.yml file.
 
-_3. STI-Net_
+**3. STI-Net**
 
 STI-Net folder contains all the decoding networks utilized in our research (STI-Net, EEGNet, EEGConformer, etc.). The complete training & validating pipeline is included.
 
@@ -38,7 +38,7 @@ We have provided a preprocessed dataset via Baidu Netdisk. It can be easily acce
 You can access them on https://pan.baidu.com/s/1u1JRxspI6VCk9Q-788LfAA , password: oril . 
 Just place it under the STI-Net folder and it should work well.
 
-_4. Validation on Other Datasets_
+**4. Validation on Other Datasets**
 
 We also validate SAD-VER's performance on SEED & SEED-IV dataset. Codes avaliable at _SADVER_Series_E_ (E stands for Emotional EEG). To use the SEED and SEED-IV datasets, you first need to download the SEED and SEED-IV datasets and run the mapping.py file in the _Data Preprocessing_ folder. Then, replace the corresponding files in AV-DPM and STI-Net with the files from _SADVER_Series_E_.
 
@@ -46,7 +46,7 @@ SEED and SEED-IV datasets are avaliable at: https://bcmi.sjtu.edu.cn/home/seed/
 
 Our experimental results in SEED & SEED-IV dataset are included in _Results on SEED.pdf_.
 
-_5. Acknowledgements_
+**5. Acknowledgements**
 
 This project is deeply inspired by @ermongroup https://github.com/ermongroup/ddim . Salute to all open-source researchers!
 
