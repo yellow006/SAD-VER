@@ -2,7 +2,7 @@
 
 Code for research paper:
 
-SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentation framework for Visual-stimulus EEG Recognition (Submitted to _Advanced Engineering Informatics_, in revision).
+SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentation framework for Visual-stimulus EEG Recognition (Accepted by _Advanced Engineering Informatics_) [[Paper](https://doi.org/10.1016/j.aei.2025.103298)]
 
 <img width="2864" alt="fig1_overall_framework" src="https://github.com/user-attachments/assets/b1eb458b-766f-4902-8135-e79730969a49">
 
@@ -52,4 +52,18 @@ This project is deeply inspired by @ermongroup https://github.com/ermongroup/ddi
 
 Produced by Laboratory of Brain-Inspired Intelligence & Human-Computer Interaction, Jilin University, China.
 
-Supervised by Prof. Wanzhong Chen & Prof. Mingyang Li.
+Supervised by Prof. W Chen & Prof. M Li.
+
+Hope this code can be useful to you. I would appreciate you citing us in your paper. 😊
+
+```
+@article{huang2025sad,
+  title = {{SAD-VER: A Self-supervised, Diffusion probabilistic model-based data augmentation framework for Visual-stimulus EEG Recognition}},
+  author = {Huang, Junjie and Li, Mingyang and Chen, Wanzhong},
+  year = {2025},
+  journal = {Advanced Engineering Informatics},
+  volume = {65},
+  pages = {103298},
+  doi = {10.1016/j.aei.2025.103298}
+}
+```
