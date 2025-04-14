@@ -50,9 +50,7 @@ Our experimental results in SEED & SEED-IV dataset are included in _Results on S
 
 This project is deeply inspired by @ermongroup https://github.com/ermongroup/ddim . Salute to all open-source researchers!
 
-Produced by Laboratory of Brain-Inspired Intelligence & Human-Computer Interaction, Jilin University, China.
-
-Supervised by Prof. W Chen & Prof. M Li.
+Produced by Laboratory of Brain-Inspired Intelligence & Human-Computer Interaction, Jilin University, China. Supervised by Prof. W Chen & Prof. M Li.
 
 Hope this code can be useful to you. I would appreciate you citing us in your paper. 😊
 
